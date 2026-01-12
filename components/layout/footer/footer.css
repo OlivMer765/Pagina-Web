@@ -1,0 +1,13 @@
+.main-footer {
+    background-color: var(--dark-black);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 5px solid var(--accent-red);
+    margin-top: 50px;
+}
+
+.student-info {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

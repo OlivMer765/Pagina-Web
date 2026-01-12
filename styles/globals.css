@@ -1,0 +1,70 @@
+@import url('variables.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--dark-black);
+    background-color: var(--white);
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+/* Estilos para contenedores de texto y secciones de información */
+.container-info {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    border-bottom: 3px solid var(--secondary-orange);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.info-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--primary-blue);
+}
+
+.info-item {
+    margin-bottom: 30px;
+}
+
+.info-item h3 {
+    font-size: 1rem;
+    color: var(--accent-red); /* Usamos el rojo UNIS para títulos pequeños */
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 800px) {
+    .container-info {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,15 @@
+.hero {
+    background: linear-gradient(rgba(16, 101, 199, 0.856), #203569), url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}

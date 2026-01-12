@@ -1,0 +1,15 @@
+.btn-primary {
+    background-color: var(--secondary-orange);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #d87a1a;
+}
