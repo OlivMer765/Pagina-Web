@@ -1,0 +1,14 @@
+:root {
+    /* Paleta de colores */
+    --color-base: #2E66C9;        /* Azul principal */
+    --color-split-1: #C9832E;     /* Naranja */
+    --color-split-2: #C9AA2E;     /* Dorado/Amarillo */
+    --color-dark: #363D4A;        /* Gris oscuro azulado */
+    --color-accent: #4A4636;      /* Gris oliva */
+    --color-white: #ffffff;
+    --color-bg: #f8f9fa;
+    
+    /* Sombras y Efectos */
+    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+    --reflection: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, transparent 50%);
+}
