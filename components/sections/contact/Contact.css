@@ -1,18 +1,5 @@
-.contact-container {
-    background: var(--light-gray);
-    padding: 40px;
-    border-radius: 8px;
-    border-left: 10px solid var(--primary-blue);
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form input, .contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.contact-section {
+    background-color: var(--color-bg);
+    text-align: center;
+    border-top: 1px solid #eee;
 }

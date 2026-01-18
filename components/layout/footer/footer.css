@@ -1,13 +1,43 @@
 .main-footer {
-    background-color: var(--dark-black);
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 5px solid var(--accent-red);
-    margin-top: 50px;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 60px 0 20px;
+    margin-top: 40px;
 }
 
-.student-info {
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-btn {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--color-white);
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
     font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.footer-btn:hover {
+    background: var(--color-white);
+    color: var(--color-dark);
+}
+
+.contact-info {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    width: 100%;
+    font-size: 0.85rem;
     opacity: 0.8;
 }
