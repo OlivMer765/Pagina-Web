@@ -55,3 +55,21 @@ h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+
+.bio-section {
+    margin-bottom: 60px;
+    /* Espacio con lo de abajo */
+    margin-top: 40px;
+    /* Espacio con lo de arriba */
+}
+
+.highlight {
+    color: var(--color-split-1);
+    font-weight: 600;
+}
+
+.grid-bio {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
