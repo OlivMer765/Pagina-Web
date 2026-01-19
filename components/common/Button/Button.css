@@ -1,17 +1,24 @@
 .btn-primary {
-    background-color: var(--color-split-1);
+    background-color: var(--color-primary);
     color: white;
-    padding: 12px 30px;
+    padding: 14px 32px;
     border: none;
-    border-radius: 50px;
+    border-radius: 4px; /* Más cuadrado/formal tipo UNIS */
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     cursor: pointer;
-    transition: transform 0.2s, background-color 0.3s;
+    transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
 }
 
 .btn-primary:hover {
-    background-color: #b07228;
+    background-color: var(--color-accent-1);
     transform: translateY(-2px);
+    box-shadow: var(--shadow-strong);
+}
+
+.btn-admission {
+    background-color: var(--color-success);
 }

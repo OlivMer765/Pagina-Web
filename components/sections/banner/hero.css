@@ -1,8 +1,7 @@
 .hero {
-    background-color: var(--color-base);
-    color: var(--color-white);
     padding: 100px 0;
     text-align: center;
+    color: var(--color-white);
 }
 
 .hero h1 {
@@ -15,4 +14,73 @@
     opacity: 0.9;
     max-width: 600px;
     margin: 0 auto;
+}
+
+.hero-kinal {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../../assets/img/kinal-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-white);
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Evita que el video se salga del contenedor */
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    letter-spacing: -2px;
+}
+
+.hero-content .slogan {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* Variantes de degradado para cada página */
+.hero-index {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent-2) 100%);
+}
+
+.hero-bio {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-success) 100%);
+}
+
+/* Estilo para que el video ocupe todo el fondo sin deformarse */
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2; /* Enviado al fondo detrás de todo */
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Clave para que se comporte como un background-size: cover */
+}
+
+/* Capa de oscurecimiento */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55); /* El último número (0.55) controla qué tan oscuro se ve */
+    z-index: -1; /* Encima del video pero debajo del texto */
+}
+
+/* Asegurar que el contenido esté por encima de las capas */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
 }

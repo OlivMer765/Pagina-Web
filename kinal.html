@@ -1,11 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rediseño Fundación Kinal</title>
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="components/layout/header/header.css">
+    <link rel="stylesheet" href="components/layout/footer/footer.css">
+    <link rel="stylesheet" href="components/sections/banner/hero.css">
+    <link rel="stylesheet" href="components/common/button/button.css">
+    <link rel="stylesheet" href="components/sections/kinal/kinal.css">
 </head>
+
 <body>
-    
+
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">FUNDACIÓN KINAL</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Intereses</a></li>
+                    <li><a href="biografia.html">Sobre Mí</a></li>
+                    <li><a href="kinal.html">Propuesta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section estilo UNIS -->
+        <section class="hero-kinal">
+            <video autoplay muted loop playsinline class="video-bg">
+                <source
+                    src="https://video.wixstatic.com/video/41a674_0f44166d2817460cad152325a2d2ae11/1080p/mp4/file.mp4"
+                    type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+            <div class="video-overlay"></div>
+            <div class="hero-content">
+                <img src="assets/img/KINAL LETRAS BLANCAS 2.png" alt="Logo Kinal"
+                    style="width: 350px; margin-bottom: 20px;">
+                <br>
+                <img src="assets/img/el_trabajo_bien_hecho.png" alt="Slogan Kinal"
+                    style="width: 150px; margin-bottom: 20px;">
+                <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.2rem;">
+                    Profesionales capaces y confiables, con visión global y orientados al servicio de los demás.
+                </p>
+                <a href="#oferta" class="btn-primary btn-admission">Haz tu prueba de admisión</a>
+            </div>
+        </section>
+
+        <!-- Oferta Académica -->
+        <section id="oferta" class="container" style="padding: 100px 0;">
+            <h2 style="text-align: center; margin-bottom: 50px;">Nuestra Oferta Educativa</h2>
+            <div class="kinal-grid">
+                <div class="kinal-card">
+                    <h3>Ciclo Básico</h3>
+                    <p>Formación integral para jóvenes, centrada en valores y excelencia académica inicial.</p>
+                </div>
+                <div class="kinal-card">
+                    <h3>Diversificado</h3>
+                    <p>Carreras técnicas de alto nivel: Informática, Electrónica, Mecánica y más.</p>
+                </div>
+                <div class="kinal-card">
+                    <h3>Escuela Técnica</h3>
+                    <p>Cursos de especialización técnica para adultos y jóvenes que buscan inserción laboral rápida.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vida Estudiantil estilo UVG -->
+        <section style="background-color: #f0f2f5; padding: 100px 0;">
+            <div class="container">
+                <div style="display: flex; gap: 50px; align-items: center;">
+                    <div style="flex: 1;">
+                        <h2 style="color: var(--color-accent-2);">Vida Estudiantil</h2>
+                        <p>En Kinal, el aprendizaje va más allá del aula. Fomentamos el liderazgo y la sana convivencia
+                            a través de nuestras diversas actividades.</p>
+                        <br>
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 15px;"><strong>Deporte:</strong> Selecciones de Fútbol,
+                                Básquetbol y Arquería.</li>
+                            <li style="margin-bottom: 15px;"><strong>Clubes:</strong> Participa en el Club Tucán o
+                                Club Jaguar.</li>
+                            <li style="margin-bottom: 15px;"><strong>Expo Kinal:</strong> El evento tecnológico más
+                                grande de la institución.</li>
+                        </ul>
+                    </div>
+                    <div style="flex: 1;" class="image-wrapper">
+                        <img src="https://via.placeholder.com/600x400" alt="Vida estudiantil Kinal"
+                            class="styled-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explicación del Rediseño -->
+        <section class="container" style="padding: 100px 0; border-top: 1px solid #eee;">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 style="color: var(--color-accent-1); text-align: center;">¿Por qué este rediseño?</h2>
+                <p>El diseño original de Kinal se percibe como un repositorio de información estático, lo cual puede
+                    resultar tedioso para el estudiante moderno. Mi propuesta introduce:</p>
+                <br>
+                <ol style="padding-left: 20px;">
+                    <li style="margin-bottom: 10px;"><strong>Impacto Visual Inmediato:</strong> El uso de un Hero con
+                        video/imagen oscurecida y tipografía de gran formato captura la atención desde el primer
+                        segundo.</li>
+                    <li style="margin-bottom: 10px;"><strong>Jerarquía de Información:</strong> Sustituimos las "paredes
+                        de texto" por tarjetas (cards) y secciones visualmente separadas que facilitan el escaneo
+                        visual.</li>
+                    <li style="margin-bottom: 10px;"><strong>Enfoque en el Usuario Alumno:</strong> Al destacar la "Vida
+                        Estudiantil" y los clubes, la página deja de ser solo para padres y se convierte en un portal
+                        que el alumno desea explorar.</li>
+                    <li style="margin-bottom: 10px;"><strong>Llamada a la Acción (CTA) clara:</strong> El botón de
+                        admisión es visible y directo, reduciendo la fricción para nuevos ingresos.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-inner">
+            <div class="footer-nav">
+                <a href="index.html" class="footer-btn">Inicio</a>
+                <a href="biografia.html" class="footer-btn">Biografía</a>
+            </div>
+            <div class="contact-info">
+                <p><strong>Oliver Javier Mérida López</strong> | Carnet: 2021641 | Sección: IN6CM</p>
+                <p>© 2026 Rediseño Académico - Propuesta Institucional.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
