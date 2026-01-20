@@ -12,31 +12,59 @@
     <link rel="stylesheet" href="components/sections/banner/hero.css">
     <link rel="stylesheet" href="components/common/button/button.css">
     <link rel="stylesheet" href="components/sections/kinal/kinal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
 
     <header class="main-header">
-        <div class="container header-container">
-            <div class="logo">FUNDACIÓN KINAL</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Intereses</a></li>
-                    <li><a href="biografia.html">Sobre Mí</a></li>
-                    <li><a href="kinal.html">Propuesta</a></li>
-                </ul>
-            </nav>
+        <!-- BARRA SUPERIOR (Logo y Enlaces Auxiliares) -->
+        <div class="header-top">
+            <div class="container top-container">
+                <a href="kinal.html" class="header-logo-link">
+                    <img src="assets/img/KINAL LETRAS BLANCAS 2.png" alt="Fundación Kinal" class="header-logo">
+                </a>
+                <nav class="secondary-nav">
+                    <ul>
+                        <li><a href="https://www.kinal.org.gt/apoyanos" target="_blank">APÓYANOS</a></li>
+                        <li><a href="#">EDUCACIÓN</a></li>
+                        <li><a href="#">COLABORADORES</a></li>
+                        <li><a href="#">EGRESADOS</a></li>
+                        <li><a href="#">BOLSA DE EMPLEOS</a></li>
+                        <li><a href="#">BLOG</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- BARRA INFERIOR (Menú Principal y Redes Sociales) -->
+        <div class="header-bottom">
+            <div class="container bottom-container">
+                <nav class="primary-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">INTERESES</a></li>
+                        <li><a href="biografia.html">SOBRE MÍ</a></li>
+                        <li><a href="kinal.html" class="active">PROPUESTA</a></li>
+                        <li><a href="#oferta">ACADÉMICO</a></li>
+                        <li><a href="./pages/vida-estudiantil.html" class="nav-btn-highlight">VIDA ESTUDIANTIL</a></li>
+                    </ul>
+                </nav>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/kinal.gt" target="_blank" title="Facebook"> <i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/fundacionkinal/?hl=es" target="_blank" title="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section estilo UNIS -->
         <section class="hero-kinal">
-            <video autoplay muted loop playsinline class="video-bg">
+            <video poster="assets/img/kinal-bg.jpg" autoplay muted loop playsinline class="video-bg">
                 <source
                     src="https://video.wixstatic.com/video/41a674_0f44166d2817460cad152325a2d2ae11/1080p/mp4/file.mp4"
                     type="video/mp4">
-                Tu navegador no soporta videos.
             </video>
             <div class="video-overlay"></div>
             <div class="hero-content">
@@ -45,78 +73,193 @@
                 <br>
                 <img src="assets/img/el_trabajo_bien_hecho.png" alt="Slogan Kinal"
                     style="width: 150px; margin-bottom: 20px;">
+                <div class="hero-line"></div>
                 <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.2rem;">
-                    Profesionales capaces y confiables, con visión global y orientados al servicio de los demás.
+                    Formamos profesionales íntegros y confiables, con visión global y compromiso con el servicio a los
+                    demás.
                 </p>
                 <a href="#oferta" class="btn-primary btn-admission">Haz tu prueba de admisión</a>
             </div>
         </section>
 
-        <!-- Oferta Académica -->
-        <section id="oferta" class="container" style="padding: 100px 0;">
-            <h2 style="text-align: center; margin-bottom: 50px;">Nuestra Oferta Educativa</h2>
-            <div class="kinal-grid">
-                <div class="kinal-card">
-                    <h3>Ciclo Básico</h3>
-                    <p>Formación integral para jóvenes, centrada en valores y excelencia académica inicial.</p>
+        <section id="oferta" class="container offer-section">
+            <div class="section-header-kinal">
+                <h2>TU CAMINO AL ÉXITO ESTÁ EN KINAL</h2>
+                <p>Kinal es un Centro Educativo privado, no lucrativo, dirigido a la formación técnica profesional de
+                    jóvenes y adultos. Nuestro valor fundamental es enseñar a realizar el trabajo bien hecho.</p>
+            </div>
+
+            <div class="offer-grid">
+                <!-- Ciclo Básico -->
+                <div class="offer-card">
+                    <div class="offer-img-wrapper">
+                        <a href="https://www.kinal.org.gt/ciclobasico">
+                            <img src="assets/img/ciclo-basico.png" alt="Ciclo Básico">
+                        </a>
+                    </div>
+                    <p>Kinal ofrece su programa de Educación General Básica para aquellos jóvenes que buscan una
+                        orientación técnica y excelencia académica.</p>
+                    <a href="https://www.kinal.org.gt/ciclobasico" class="btn-more">CONOCE MÁS</a>
                 </div>
-                <div class="kinal-card">
-                    <h3>Diversificado</h3>
-                    <p>Carreras técnicas de alto nivel: Informática, Electrónica, Mecánica y más.</p>
+
+                <!-- Diversificado -->
+                <div class="offer-card">
+                    <div class="offer-img-wrapper">
+                        <a href="https://www.kinal.org.gt/diversificado">
+                            <img src="assets/img/diversificado.png" alt="Diversificado">
+                        </a>
+                    </div>
+                    <p>Durante 3 años se prepara al joven de forma técnica y académica, el egresado estará listo para
+                        trabajar en el ramo técnico elegido.</p>
+                    <a href="https://www.kinal.org.gt/diversificado" class="btn-more">CONOCE MÁS</a>
                 </div>
-                <div class="kinal-card">
-                    <h3>Escuela Técnica</h3>
-                    <p>Cursos de especialización técnica para adultos y jóvenes que buscan inserción laboral rápida.</p>
+
+                <!-- Escuela Técnica -->
+                <div class="offer-card">
+                    <div class="offer-img-wrapper">
+                        <a href="https://www.kinal.org.gt/escuelatecnicasuperior">
+                            <img src="assets/img/escuela-tecnica.png" alt="Escuela Técnica">
+                        </a>
+                    </div>
+                    <p>Contamos con más de 30 especialidades técnicas y tecnológicas que pueden favorecer tu crecimiento
+                        y/o tu inserción laboral.</p>
+                    <a href="https://www.kinal.org.gt/escuelatecnicasuperior" class="btn-more">CONOCE MÁS</a>
+                </div>
+
+                <!-- Programas para tu negocio -->
+                <div class="offer-card">
+                    <div class="offer-img-wrapper">
+                        <a href="https://www.kinal.org.gt/programas-para-tu-negocio">
+                            <img src="assets/img/programas-negocio.png" alt="Programas para tu negocio">
+                        </a>
+                    </div>
+                    <p>Podemos diseñar conjuntamente el programa de formación profesional que mejor se adapte a tus
+                        necesidades de capacitación.</p>
+                </div>
+                <!-- Tecnico universitario -->
+                <div class="offer-card">
+                    <div class="offer-img-wrapper">
+                        <a href="https://www.kinal.org.gt/tecnico-universitario">
+                            <img src="assets/img/tecnico-universitario.png" alt="Técnco Universitario">
+                        </a>
+                    </div>
+                    <p>Dirigido al fortalecimiento de mandos medios y especialmente aquellos que han cursado una carrera
+                        técnica y desean continuar con estudios a nivel universitario. Estos estudios son avalados por
+                        la Universidad del Istmo.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Vida Estudiantil estilo UVG -->
-        <section style="background-color: #f0f2f5; padding: 100px 0;">
-            <div class="container">
-                <div style="display: flex; gap: 50px; align-items: center;">
-                    <div style="flex: 1;">
-                        <h2 style="color: var(--color-accent-2);">Vida Estudiantil</h2>
-                        <p>En Kinal, el aprendizaje va más allá del aula. Fomentamos el liderazgo y la sana convivencia
-                            a través de nuestras diversas actividades.</p>
-                        <br>
-                        <ul style="list-style: none;">
-                            <li style="margin-bottom: 15px;"><strong>Deporte:</strong> Selecciones de Fútbol,
-                                Básquetbol y Arquería.</li>
-                            <li style="margin-bottom: 15px;"><strong>Clubes:</strong> Participa en el Club Tucán o
-                                Club Jaguar.</li>
-                            <li style="margin-bottom: 15px;"><strong>Expo Kinal:</strong> El evento tecnológico más
-                                grande de la institución.</li>
-                        </ul>
+        <!-- SECCIÓN DE LOGROS -->
+        <section id="logros" class="container achievement-section">
+            <div class="section-title">
+                <h2>LOGROS DE NUESTRA COMUNIDAD</h2>
+                <div class="title-shape"></div>
+            </div>
+
+            <div class="achievement-grid">
+                <!-- Logro 1: Feria Científica -->
+                <article class="achievement-card">
+                    <div class="ach-img-wrapper">
+                        <img src="assets/img/VII_Feria-Científica-de_colegios-UVG_2.jpg" alt="Feria Científica UVG">
                     </div>
-                    <div style="flex: 1;" class="image-wrapper">
-                        <img src="https://via.placeholder.com/600x400" alt="Vida estudiantil Kinal"
-                            class="styled-image">
+                    <div class="ach-content">
+                        <h3>SEGUNDO LUGAR: FERIA CIENTÍFICA UVG</h3>
+                        <p>Estudiantes de Kinal destacan en la VII Feria Científica de Colegios con el proyecto
+                            "Invernadero IoT", demostrando excelencia en innovación tecnológica.</p>
                     </div>
-                </div>
+                </article>
+
+                <!-- Logro 2: ONC -->
+                <article class="achievement-card">
+                    <div class="ach-img-wrapper">
+                        <img src="assets/img/ONC-kinal.jpg" alt="Olimpiadas de Ciencias">
+                    </div>
+                    <div class="ach-content">
+                        <h3>OLIMPIADAS NACIONALES DE CIENCIAS</h3>
+                        <p>Estudiante destacado Daniel se coronó como Campeón Nacional de Ciencias
+                            Naturales en la categoría de Segundo Básico, en el evento promovido por la Universidad de
+                            San Carlos de Guatemala.</p>
+                    </div>
+                </article>
+
+                <!-- Logro 3: Becas JBG -->
+                <article class="achievement-card">
+                    <div class="ach-img-wrapper">
+                        <img src="assets/img/beca-juan-bautista-kinal.jpg" alt="Beca Juan Bautista Gutiérrez">
+                    </div>
+                    <div class="ach-content">
+                        <h3>BECA JUAN BAUTISTA GUTIÉRREZ</h3>
+                        <p>Orgullo Kinal: Estudiantes han sido galardonados con la prestigiosa beca JBG para continuar
+                            sus estudios universitarios con excelencia académica.</p>
+                    </div>
+                </article>
             </div>
         </section>
 
-        <!-- Explicación del Rediseño -->
-        <section class="container" style="padding: 100px 0; border-top: 1px solid #eee;">
-            <div style="max-width: 800px; margin: 0 auto;">
-                <h2 style="color: var(--color-accent-1); text-align: center;">¿Por qué este rediseño?</h2>
-                <p>El diseño original de Kinal se percibe como un repositorio de información estático, lo cual puede
-                    resultar tedioso para el estudiante moderno. Mi propuesta introduce:</p>
-                <br>
-                <ol style="padding-left: 20px;">
-                    <li style="margin-bottom: 10px;"><strong>Impacto Visual Inmediato:</strong> El uso de un Hero con
-                        video/imagen oscurecida y tipografía de gran formato captura la atención desde el primer
-                        segundo.</li>
-                    <li style="margin-bottom: 10px;"><strong>Jerarquía de Información:</strong> Sustituimos las "paredes
-                        de texto" por tarjetas (cards) y secciones visualmente separadas que facilitan el escaneo
-                        visual.</li>
-                    <li style="margin-bottom: 10px;"><strong>Enfoque en el Usuario Alumno:</strong> Al destacar la "Vida
-                        Estudiantil" y los clubes, la página deja de ser solo para padres y se convierte en un portal
-                        que el alumno desea explorar.</li>
-                    <li style="margin-bottom: 10px;"><strong>Llamada a la Acción (CTA) clara:</strong> El botón de
-                        admisión es visible y directo, reduciendo la fricción para nuevos ingresos.</li>
-                </ol>
+        <!-- SECCIÓN: FUNDAMENTACIÓN DEL REDISEÑO -->
+        <section id="fundamentacion" class="container section-rediseño">
+            <div class="section-title">
+                <h2>FUNDAMENTACIÓN DEL REDISEÑO</h2>
+                <div class="title-shape"></div>
+            </div>
+
+            <div class="redesign-content">
+                <article class="redesign-block">
+                    <h3 class="text-primary">Optimización de Lectura y Adaptabilidad</h3>
+                    <p>
+                        La plataforma original carece de una gestión eficiente del ancho de banda visual. Al extender el
+                        texto a lo largo de toda la pantalla con fuentes reducidas, se genera una fatiga cognitiva
+                        innecesaria.
+                        Mi propuesta introduce <strong>márgenes estratégicos y una tipografía escalada</strong>,
+                        asegurando que la lectura sea fluida y centrada, permitiendo que el usuario procese información
+                        extensa sin esfuerzo, sin importar el tamaño del monitor.
+                    </p>
+                </article>
+
+                <article class="redesign-block">
+                    <h3 class="text-wine">Impacto Visual e Información Inmediata</h3>
+                    <p>
+                        A diferencia del sitio actual, que recibe al usuario con un video ambiental sin contexto, este
+                        rediseño utiliza un <strong>Hero Section dinámico</strong> que comunica la identidad y el lema
+                        institucional desde el primer segundo.
+                        El uso de un <strong>Double Nav (Navegación Dual)</strong> garantiza accesibilidad inmediata a
+                        redes sociales y perfiles de usuario (padres, alumnos, egresados), centralizando la operatividad
+                        del sitio.
+                    </p>
+                </article>
+
+                <article class="redesign-block">
+                    <h3 class="text-green">Vida Estudiantil: De Información a Inspiración</h3>
+                    <p>
+                        La página principal de Kinal no debe ser solo un centro de inscripciones, sino un ecosistema
+                        vivo. La nueva página de
+                        <strong>Vida Estudiantil</strong> busca motivar a los jóvenes mediante la visibilización de
+                        clubes y deportes.
+                        El objetivo es que el prospecto no solo vea una institución académica, sino un lugar donde puede
+                        desarrollar sus talentos y pertenecer a una comunidad activa.
+                    </p>
+                </article>
+
+                <article class="redesign-block">
+                    <h3 class="text-gold">Logros de Nuestra Comunidad: Reconocimiento y Motivación</h3>
+                    <p>
+                        La sección de logros cumple una doble función: valida el prestigio institucional ante entes
+                        externos y, más importante aún, <strong>reconoce el esfuerzo del estudiante</strong>.
+                        Al destacar triunfos en ferias científicas y olimpiadas, se crea un ciclo de motivación que
+                        impulsa a otros alumnos a involucrarse en actividades académicas de alto nivel.
+                    </p>
+                </article>
+
+                <article class="redesign-block">
+                    <h3 class="text-primary">Arquitectura Modular y Escalabilidad</h3>
+                    <p>
+                        Desde el punto de vista técnico, la implementación de una <strong>estructura de CSS basada en
+                            componentes</strong> permite que el sitio crezca de forma ordenada. Cada elemento (botones,
+                        tarjetas, banners) es independiente, lo que facilita futuras actualizaciones y garantiza una
+                        estética cohesiva en todas las vistas del portal.
+                    </p>
+                </article>
             </div>
         </section>
     </main>

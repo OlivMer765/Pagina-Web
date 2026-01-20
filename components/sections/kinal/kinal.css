@@ -1,24 +1,285 @@
-.kinal-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 60px 0;
+/* --- LÍNEA DE SEPARACIÓN EN HERO --- */
+.hero-line {
+    width: 60%;
+    max-width: 600px;
+    height: 2px;
+    background-color: var(--color-white);
+    margin: 25px auto;
+    border: none;
+    opacity: 0.8;
 }
 
-.kinal-card {
-    background: white;
-    padding: 40px;
-    border-radius: 8px;
-    border-bottom: 5px solid var(--color-primary);
-    box-shadow: var(--shadow-soft);
-    transition: 0.3s;
+/* --- SECCIÓN OFERTA EDUCATIVA (Contenedor Principal) --- */
+.offer-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--color-bg);
 }
 
-.kinal-card:hover {
-    transform: translateY(-10px);
+.section-header-kinal {
+    max-width: 900px;
+    margin: 0 auto 60px;
 }
 
-.kinal-card h3 {
+.section-header-kinal h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
     color: var(--color-primary);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
+
+.section-header-kinal p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* --- GRID / FLEX DE TARJETAS (Centrado Automático) --- */
+.offer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* ESTO CENTRA LAS TARJETAS SI HAY 1, 2 o 3 */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- ESTILO DE LA TARJETA --- */
+.offer-card {
+    flex: 0 1 325px; /* Ancho base de 350px, pero puede crecer si hay espacio */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+/* --- MANEJO DE IMÁGENES (Para las que traen título incluido) --- */
+.offer-img-wrapper {
+    width: 100%;
+    height: auto; /* Permite que la imagen (foto + título) se vea completa */
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.offer-img-wrapper img {
+    width: 100%;
+    height: auto; /* Muestra la imagen integra sin recortar el título azul */
+    display: block;
+    object-fit: contain;
+}
+
+/* --- PÁRRAFOS DENTRO DE TARJETAS --- */
+.offer-card p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    min-height: 60px; /* Ayuda a que los botones se alineen si los párrafos son cortos */
+}
+
+/* --- ETIQUETAS (BADGES) - Por si usas títulos aparte --- */
+.offer-badge {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 800;
+    border-radius: 50px;
+    margin-top: -30px; /* Efecto flotante sobre la imagen */
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.offer-badge.wine { background-color: var(--color-accent-2); }
+.offer-badge.gold { background-color: var(--color-accent-1); }
+
+/* --- BOTÓN "CONOCE MÁS" --- */
+.btn-more {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 12px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-more:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/* --- SECCIÓN VIDA ESTUDIANTIL (Preview) --- */
+.section-vida-estudiantil {
+    background-color: #f4f6f9;
+    padding: 100px 0;
+}
+
+/* --- SECCIÓN EXPLICACIÓN REDISEÑO --- */
+.section-rediseño {
+    padding: 100px 0;
+    border-top: 1px solid #eee;
+    background-color: var(--color-white);
+}
+
+.section-rediseño h2 {
+    margin-bottom: 30px;
+}
+
+.section-rediseño ol li {
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* --- SECCIÓN DE LOGROS --- */
+.achievement-section {
+    padding: 60px 0 100px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--color-primary);
+    text-transform: uppercase;
+}
+
+.title-shape {
+    width: 100%;
+    max-width: 800px;
+    height: 2px;
+    background: #e0e0e0;
+    margin: 15px auto;
+    position: relative;
+}
+
+.title-shape::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--color-accent-2); /* Flecha verde hacia abajo */
+}
+
+/* --- GRID DE LOGROS --- */
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.achievement-card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.ach-img-wrapper {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.ach-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ach-content {
+    padding: 25px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.ach-content h3 {
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.ach-content p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* --- ESTILOS ESPECÍFICOS PARA LA FUNDAMENTACIÓN --- */
+.section-rediseño {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.redesign-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.redesign-block {
+    background-color: #fdfdfd;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 5px solid var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.redesign-block:hover {
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transform: translateX(10px);
+}
+
+.redesign-block h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.redesign-block p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Colores de borde para cada bloque para dar "vida" */
+.redesign-block:nth-child(2) { border-left-color: var(--color-accent-2); } /* Corinto */
+.redesign-block:nth-child(3) { border-left-color: var(--color-success); }  /* Verde */
+.redesign-block:nth-child(4) { border-left-color: var(--color-accent-1); } /* Ocre */
