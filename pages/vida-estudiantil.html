@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Estudiantil - Fundación Kinal</title>
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../components/layout/header/header.css">
+    <link rel="stylesheet" href="../components/layout/footer/footer.css">
+    <link rel="stylesheet" href="../components/sections/banner/hero.css">
+    <link rel="stylesheet" href="../components/common/button/button.css">
+    <link rel="stylesheet" href="../components/sections/vida-estudiantil/vida-estudiantil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <!-- BARRA SUPERIOR (Logo y Enlaces Auxiliares) -->
+        <div class="header-top">
+            <div class="container top-container">
+                <a href="../kinal.html" class="header-logo-link">
+                    <img src="../assets/img/KINAL LETRAS BLANCAS 2.png" alt="Fundación Kinal" class="header-logo">
+                </a>
+                <nav class="secondary-nav">
+                    <ul>
+                        <li><a href="https://www.kinal.org.gt/apoyanos" target="_blank">APÓYANOS</a></li>
+                        <li><a href="#">ESTUDIANTES</a></li>
+                        <li><a href="#">PADRES</a></li>
+                        <li><a href="#">COLABORADORES</a></li>
+                        <li><a href="#">EGRESADOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- BARRA INFERIOR (Menú Principal y Redes Sociales) -->
+        <div class="header-bottom">
+            <div class="container bottom-container">
+                <nav class="primary-nav">
+                    <ul class="nav-links">
+                        <li><a href="../index.html">INTERESES</a></li>
+                        <li><a href="../biografia.html">SOBRE MÍ</a></li>
+                        <li><a href="../kinal.html">PROPUESTA</a></li>                        
+                    </ul>
+                </nav>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/kinal.gt" target="_blank" title="Facebook"> <i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/fundacionkinal/?hl=es" target="_blank" title="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN 1: Slider de Imágenes-->
+        <section class="slider-section">
+            <div class="slider-container">
+                <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="main-slider-img">
+                    <img src="../assets/img/basquetbal.jpg" alt="Vida Estudiantil Kinal">
+                    <img src="../assets/img/futbol2.jpg" alt="Vida Estudiantil Kinal">
+                </div>
+                <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <!-- Sub-nav-->
+            <nav class="sub-nav-blue">
+                <div class="container">
+                    <ul class="sub-nav-links">
+                        <li><a href="#" class="text-gold">Inicio</a></li>
+                        <li><a href="#deportes" class="active">Deportes</a></li>
+                        <li><a href="#actividades" class="active">Actividades del centro</a></li>
+                        <li><a href="#clubes" class="active">Clubes</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <!-- SECCIÓN 2: Información de Deportes -->
+        <section id="deportes" class="sports-info-section" style="background-image: url('../assets/img/futbol.jpg');">
+            <div class="container sports-flex-container">
+
+                <!-- Caja de texto oscura traslúcida -->
+                <div class="info-overlay-box">
+                    <h3>¡Entérate de nuestras selecciones deportivas!</h3>
+                    <p>En Kinal, el deporte es una pieza fundamental para la formación integral. Buscamos cultivar tus
+                        talentos físicos y fomentar el trabajo en equipo que te servirá para toda la vida.</p>
+
+                    <p><strong>¿Qué puedes esperar de nuestros equipos?</strong></p>
+                    <ul>
+                        <li>Entrenamientos dirigidos por profesionales técnicos.</li>
+                        <li>Participación en torneos interuniversitarios y federados.</li>
+                        <li>Instalaciones adecuadas para la práctica de Fútbol y Básquetbol.</li>
+                        <li>Representación institucional en eventos deportivos nacionales.</li>
+                    </ul>
+                    <p class="call-to-action">¡Integra nuestras selecciones y participa con nosotros!</p>
+                </div>
+
+                <!-- Imagen destacada a la par -->
+                <div class="featured-sports-img">
+                    <img src="../assets/img/basquetbal2.jpg" alt="Deporte en Kinal">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: Actividades -->
+        <section id="actividades" style="padding: 40px 0;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>ACTIVIDADES DENTRO DEL CENTRO</h2>
+                    <div class="title-shape"></div>
+                </div>
+
+                <div class="activities-grid">
+                    <article class="activity-card">
+                        <img src="../assets/img/aniversario.jpg" alt="Aniversario">
+                        <div class="card-content">
+                            <h3>ANIVERSARIO KINAL</h3>
+                            <p>Cada año celebramos nuestra fundación con actividades culturales y deportivas que unen a
+                                toda
+                                la comunidad.</p>
+                        </div>
+                    </article>
+                    <article class="activity-card">
+                        <img src="../assets/img/expo-kinal-element-2.jpg" alt="Expo Kinal">
+                        <div class="card-content">
+                            <h3>EXPO KINAL</h3>
+                            <p>El evento cumbre donde nuestros estudiantes demuestran sus habilidades técnicas mediante
+                                proyectos innovadores.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: Clubes Juveniles -->
+        <section id="clubes" class="club-section">
+            <div class="container">
+                <h2 class="text-wine" style="text-align: center; margin-bottom: 40px;">PARTICIPA EN LOS CLUBES</h2>
+                <div class="clubs-container">
+                    <div class="club-item">
+                        <a href="https://www.instagram.com/clubtucangt/?hl=es-la" target="_blank">
+                        <img src="../assets/img/club-tucan-logo-transparente.png" alt="Club Tucán" class="club-logo">
+                        </a>
+                        <h3>Club Juvenil Tucán</h3>
+                    </div>
+                    <div class="club-item">
+                        <a href="https://www.instagram.com/club_jaguar_/" target="_blank">
+                        <img src="../assets/img/club-jaguar-logo-transparente.png" alt="Club Jaguar" class="club-logo">                        
+                        </a>
+                        <h3>Club Juvenil Jaguar</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-inner">
+            <p><strong>Oliver Javier Mérida López</strong> | Carnet: 2021641</p>
+            <p>© 2026 Vida Estudiantil - Propuesta Rediseño Kinal Academy</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
